@@ -8,7 +8,8 @@ const {
   failLogin,
   failRegister,
   myUser,
-} = require("../controllers");
+} = require("../controllers/users");
+const { info } = require("../controllers/info");
 
 routes.post(
   "/login",
@@ -27,5 +28,7 @@ routes.get("/fail-login", failLogin);
 routes.get("/fail-register", failRegister);
 // Prueba
 routes.get("/", checkAuth, myUser);
+
+routes.get("/info", info);
 
 module.exports = routes;

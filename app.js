@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const session = require("express-session");
 const router = require("./src/routes");
@@ -12,11 +13,11 @@ const PORT = process.env.PORT || 8080;
 
 app.use(
   session({
-    secret: "supersecret",
+    secret: process.env.SECRET_SESSION,
     resave: true,
     saveUninitialized: true,
     cookie: {
-      maxAge: 600000,
+      maxAge: +process.env.COOKIE_MAX_AGE,
     },
   })
 );
