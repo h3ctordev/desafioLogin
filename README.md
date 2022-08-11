@@ -15,7 +15,7 @@ El tiempo de vida de las sesiones son de 10 minutos.
 
 ### Datos a agregar en .env
 
-PORT ( viene por defecto 8080)
-COOKIE_MAX_AGE (numero en segundos)
-SECRET_SESSION (cadena de texto)
-MOONGODB_URI (Uri para entrar a mongodb)
+- PORT ( viene por defecto 8080)
+- COOKIE_MAX_AGE (numero en segundos)
+- SECRET_SESSION (cadena de texto)
+- MOONGODB_URI (Uri para entrar a mongodb)
