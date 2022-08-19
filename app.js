@@ -28,7 +28,7 @@ app.use(express.json());
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use(router);
+app.use("/api", router);
 
 app.listen(PORT, async () => {
   console.log(`Listen port ${PORT}`);

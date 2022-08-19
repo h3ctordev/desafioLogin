@@ -1,5 +1,5 @@
 const info = (req, res) => {
-  return res.status(200).json({
+  res.status(200).json({
     "argumentos-entrada": process.argv,
     "sistema-operativo": process.platform,
     "node-version": process.versions.node,

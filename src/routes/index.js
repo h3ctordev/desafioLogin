@@ -10,6 +10,7 @@ const {
   myUser,
 } = require("../controllers/users");
 const { info } = require("../controllers/info");
+const { randoms } = require("../controllers/randoms");
 
 routes.post(
   "/login",
@@ -30,5 +31,6 @@ routes.get("/fail-register", failRegister);
 routes.get("/", checkAuth, myUser);
 
 routes.get("/info", info);
+routes.get("/randoms", randoms);
 
 module.exports = routes;
